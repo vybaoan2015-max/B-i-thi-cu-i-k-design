@@ -97,3 +97,25 @@ h1 {
   user-select: none;
   pointer-events: none;
 }
+.gallery {
+  display: flex;
+  flex-direction: column; /* xếp dọc */
+  gap: 40px;
+}
+
+.item {
+  display: flex;
+}
+
+.item:nth-child(odd) {
+  justify-content: flex-start;
+}
+
+.item:nth-child(even) {
+  justify-content: flex-end;
+}
+
+.item img {
+  width: 500px;
+  border-radius: 30px;
+}
