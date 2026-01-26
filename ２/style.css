@@ -12,10 +12,28 @@ body {
     ),
     linear-gradient(to bottom, #f8fbff, #e6f2ff);
 }
-img {
-  width: 205px;
-  height: 340px;
+.profile {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin: 120px 60px;
+  margin-left: 0;
 }
+.profile img {
+  width: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.info h1 {
+  margin: 0 0 10px 0;
+}
+.info p {
+  margin: 6px 0;
+  font-size: 2rem;
+}
+
 nav {
   display: flex;
   justify-content: flex-end;
@@ -48,6 +66,19 @@ nav a {
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
+}
+.two-column {
+  display: flex;
+  max-width: 900px;
+  margin: 60px auto;
+  gap: 30px;
+}
+.col {
+  flex: 1;
+}
+.divider {
+  width: 1px;
+  background-color: #ccc;
 }
 .personal-logo {
   position: fixed;
